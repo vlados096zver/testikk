@@ -1,0 +1,135 @@
+@import 'responsive'
+
+.info
+	overflow: hidden
+	&__row
+		position: fixed
+		top: 20px
+		left: 0px
+		right: 0px
+		display: flex
+		background-color: #e5332a
+		width: max-content
+		animation: 10s animText infinite linear
+		overflow: hidden
+
+	&__elem
+		font-size: 23px
+		line-height: 1.22
+		color: #fff
+		padding: 10px 0
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		&--image
+			width: calc(100% - 556px)
+			+media(mdx)
+				width: 100%
+			img, picture
+				display: block
+
+			img
+				width: 100%
+				height: 100vh
+				object-fit: cover
+				+media(lgs)
+					object-position: 0
+				+media(mdx)
+					height: initial
+					object-fit: initial
+					object-position: initial
+
+		&--content
+			width: 556px
+			min-height: 100vh
+			display: flex
+			flex-direction: column
+			background-color: #1f418c
+			padding-top: 110px
+			+media(mdx)
+				width: 100%
+				min-height: initial
+				padding-top: 0px
+
+	&__logo
+		width: 250px
+		height: 250px
+		margin: 0 auto
+		margin-bottom: 68px
+		+media(mdx)
+			width: 150px
+			height: 150px
+			margin-left: 30px
+			margin-top: -75px
+			margin-bottom: 25px
+
+	&__text,
+	&__contacts
+		p, a
+			font-size: 23px
+			line-height: 1.22
+			color: #fff
+			+media(mdx)
+				font-size: 16px
+
+	&__text,
+	&__contacts
+		padding: 0 50px
+		padding-bottom: 45px
+		+media(mdx)
+			padding: 0 30px
+			padding-bottom: 40px
+
+	&__text
+		p
+			white-space: pre-line
+
+	&__contacts
+		span
+			display: block
+			font-size: 23px
+			line-height: 1.22
+			color: #ffcd18
+			padding-bottom: 5px
+			font-weight: 500
+			+media(mdx)
+				font-size: 16px
+		a
+			&:hover
+				color: #ffcd18
+				transition: 0.25s color
+
+	&__inner
+		width: 100%
+
+	&__box	
+		display: block
+		background-image: url(../img/icons/pdf.svg)
+		background-repeat: no-repeat
+		background-position: left 52px center
+		background-size: 40px 48px
+		width: 100%
+		font-size: 23px
+		line-height: 1.22
+		color: #1f418c
+		padding: 35px
+		padding-left: 115px
+		+media(mdx)
+			font-size: 16px
+			padding: 29px 
+			padding-left: 88px
+			background-position: left 22px center
+		&:hover
+			transition: 0.25s background-color
+		&:first-child
+			background-color: #ffcd18
+			&:hover
+				background-color: rgba(255, 205, 24, 0.8)
+
+		&:last-child
+			background-color: #f89fdf
+			&:hover
+				background-color: rgba(248, 159, 223, 0.8)

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat.eot");
+    src: url("Montserrat.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat.woff") format("woff"),
+    url("Montserrat.woff2") format("woff2"),
+    url("Montserrat.ttf") format("truetype"),
+    url('Montserrat.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("Montserrat-Medium.eot");
+    src: url("Montserrat-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Montserrat-Medium.woff") format("woff"),
+    url("Montserrat-Medium.woff2") format("woff2"),
+    url("Montserrat-Medium.ttf") format("truetype"),
+    url('Montserrat-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}

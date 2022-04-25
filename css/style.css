@@ -1,0 +1,332 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+fieldset,
+img,
+abbr {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+ul li {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	outline: none;
+}
+
+legend {
+	color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	overflow-x: hidden;
+	color: #333333;
+	background-color: #fff;
+	text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Montserrat";
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.info {
+	overflow: hidden;
+}
+
+.info__row {
+	position: fixed;
+	top: 20px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	background-color: #e5332a;
+	width: max-content;
+	animation: 10s animText infinite linear;
+	overflow: hidden;
+}
+
+.info__elem {
+	font-size: 23px;
+	line-height: 1.22;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.info__wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.info__item--image {
+	width: calc(100% - 556px);
+}
+
+.info__item--image img,
+.info__item--image picture {
+	display: block;
+}
+
+.info__item--image img {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.info__item--content {
+	width: 556px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #1f418c;
+	padding-top: 110px;
+}
+
+.info__logo {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	margin-bottom: 68px;
+}
+
+.info__text p,
+.info__text a,
+.info__contacts p,
+.info__contacts a {
+	font-size: 23px;
+	line-height: 1.22;
+	color: #fff;
+}
+
+.info__text,
+.info__contacts {
+	padding: 0 50px;
+	padding-bottom: 45px;
+}
+
+.info__text p {
+	white-space: pre-line;
+}
+
+.info__contacts span {
+	display: block;
+	font-size: 23px;
+	line-height: 1.22;
+	color: #ffcd18;
+	padding-bottom: 5px;
+	font-weight: 500;
+}
+
+.info__contacts a:hover {
+	color: #ffcd18;
+	transition: 0.25s color;
+}
+
+.info__inner {
+	width: 100%;
+}
+
+.info__box {
+	display: block;
+	background-image: url(../img/icons/pdf.svg);
+	background-repeat: no-repeat;
+	background-position: left 52px center;
+	background-size: 40px 48px;
+	width: 100%;
+	font-size: 23px;
+	line-height: 1.22;
+	color: #1f418c;
+	padding: 35px;
+	padding-left: 115px;
+}
+
+.info__box:hover {
+	transition: 0.25s background-color;
+}
+
+.info__box:first-child {
+	background-color: #ffcd18;
+}
+
+.info__box:first-child:hover {
+	background-color: rgba(255, 205, 24, 0.8);
+}
+
+.info__box:last-child {
+	background-color: #f89fdf;
+}
+
+.info__box:last-child:hover {
+	background-color: rgba(248, 159, 223, 0.8);
+}
+
+@media screen and (max-width: 1250px) {
+
+.info__item--image img {
+	object-position: 0;
+}
+
+}
+
+@media screen and (max-width: 1022px) {
+
+.info__item--image {
+	width: 100%;
+}
+
+.info__item--image img {
+	height: initial;
+	object-fit: initial;
+	object-position: initial;
+}
+
+.info__item--content {
+	width: 100%;
+	min-height: initial;
+	padding-top: 0px;
+}
+
+.info__logo {
+	width: 150px;
+	height: 150px;
+	margin-left: 30px;
+	margin-top: -75px;
+	margin-bottom: 25px;
+}
+
+.info__text p,
+.info__text a,
+.info__contacts p,
+.info__contacts a {
+	font-size: 16px;
+}
+
+.info__text,
+.info__contacts {
+	padding: 0 30px;
+	padding-bottom: 40px;
+}
+
+.info__contacts span {
+	font-size: 16px;
+}
+
+.info__box {
+	font-size: 16px;
+	padding: 29px;
+	padding-left: 88px;
+	background-position: left 22px center;
+}
+
+}
+
